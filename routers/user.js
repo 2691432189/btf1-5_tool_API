@@ -10,5 +10,6 @@ user.get('/addConfirm', require('./users/addConfirm'))
 user.get('/getUserWeapons', require('./users/getUserWeapons'))
 // 获取用户载具信息
 user.get('/getUserVehicles', require('./users/getUserVehicles'))
-
+//获取用户兵种统计信息
+user.get('/getUserArms', require('./users/getUserArms'))
 module.exports = user

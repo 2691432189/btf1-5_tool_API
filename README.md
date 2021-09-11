@@ -32,10 +32,18 @@
 //type    类型(1/5)
 ```
 
-#### 4.获取用户载具信息
+#### 5.获取用户载具信息
 
 ```js
 /user/getUserVehicles?userId=EmiliaAngel&type=5
+//userId  用户id(必传)
+//type    类型(1/5)
+```
+
+#### 6.获取用户兵种信息
+
+```js
+/user/getUserArms?userId=EmiliaAngel&type=1
 //userId  用户id(必传)
 //type    类型(1/5)
 ```
