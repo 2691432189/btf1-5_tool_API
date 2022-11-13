@@ -16,5 +16,9 @@ module.exports = {
   //获取用户兵种统计信息
   getUserArms(type,id){
     return axios.get(`${ type === '1' ? 'bf1' : 'bfv' }/classes/?name=${id}&lang=zh-tw`)
+  },
+  //获取用户战排信息
+  getUserBattlePlatoon(type,id){
+    return axios.get(`${ type === '1' ? 'bf1' : 'bfv' }/all/?name=${id}&lang=zh-tw`)
   }
 }

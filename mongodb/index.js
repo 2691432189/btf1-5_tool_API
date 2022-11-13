@@ -8,7 +8,7 @@ const UsersSchema = new Schema({
 	userId: {
 		type: String,
 		required: true,
-        unique: true
+    unique: true
 	},
     // 浏览次数
     views: {

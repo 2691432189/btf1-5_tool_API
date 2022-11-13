@@ -12,4 +12,6 @@ user.get('/getUserWeapons', require('./users/getUserWeapons'))
 user.get('/getUserVehicles', require('./users/getUserVehicles'))
 //获取用户兵种统计信息
 user.get('/getUserArms', require('./users/getUserArms'))
+//获取用户战排信息
+user.get('/getUserBattlePlatoon', require('./users/getUserBattlePlatoon'))
 module.exports = user

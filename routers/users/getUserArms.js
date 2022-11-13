@@ -2,7 +2,6 @@ const { getUserArms } = require('../../api/index')
 module.exports = async (req, res) => {
   getUserArms(req.query.type , req.query.userId)
   .then(async data => {
-    console.log(data)
     res.send({
       statusText: true,
       data:data.data.classes

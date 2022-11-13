@@ -15,8 +15,9 @@ module.exports = async (req, res) => {
         // 更新该用户被浏览的次数
         await  User.updateOne({_id:user._id}, {views: user.views + 1})
       }
+      
       const userDetails = {
-        localData: user,
+        localData: {...user._doc,avatar:data.data.avatar},
         OfficialData: data.data,
         statusText: true
       }
