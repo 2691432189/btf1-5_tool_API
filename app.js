@@ -11,7 +11,7 @@ app.use(cors())
 // 开放静态资源
 app.use(express.static(path.join(__dirname, 'public')))
 // 数据库连接
-mongoose.connect('mongodb://btf:btf@localhost:27017/battlefield1-5_recordquerytool', { useUnifiedTopology: true ,useNewUrlParser: true })
+mongoose.connect('mongodb://koufengqi.cn:6300/battlefield1-5_recordquerytool', { useUnifiedTopology: true ,useNewUrlParser: true })
 	.then(() => console.log('数据库连接成功'))
 	.catch(() => console.log('数据库连接失败'))
 mongoose.set('useCreateIndex', true)
@@ -20,6 +20,6 @@ app.use('/user',require('./routers/user.js'))
 
 
 // 配置端口
-app.listen(8081, function () {
-  console.log("应用实例，访问地址为", 'localhost:8081')
+app.listen(80, function () {
+  console.log("应用实例，访问地址为", 'localhost:80')
 })
